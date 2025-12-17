@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma. Juliet M. Ballesteros | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="me.jpg" type="image/jpeg">
+  <style>
+    :root{
+      --purple-main:#9b5de5;
+      --purple-light:#f3e8ff;
+      --purple-dark:#5a189a;
+      --pink-accent:#f15bb5;
+      --text-dark:#2d1b3f;
+    }
+    *{ margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+    body{ background:linear-gradient(135deg,#f8e9ff,#fdf4ff); color:var(--text-dark); overflow-x:hidden; }
+    header{ text-align:center; padding:80px 20px 40px; }
+    .btn{ display:inline-block; margin-top:25px; padding:12px 30px; background:linear-gradient(135deg,var(--purple-main),var(--pink-accent)); color:#fff; text-decoration:none; border-radius:30px; font-weight:600; transition:transform .3s, box-shadow .3s; }
+    .btn:hover{ transform:translateY(-3px); box-shadow:0 10px 25px rgba(155,93,229,.4); }
+    section{ max-width:1100px; margin:40px auto; padding:40px; background:rgba(255,255,255,.8); border-radius:25px; box-shadow:0 20px 40px rgba(0,0,0,.08); animation:fadeUp .8s ease both; }
+    @keyframes fadeUp{ from{ opacity:0; transform:translateY(40px); } to{ opacity:1; transform:translateY(0); } }
+    section h2{ font-size:1.8rem; margin-bottom:20px; color:var(--purple-dark); position:relative; }
+    section h2::after{ content:""; width:60px; height:4px; background:linear-gradient(135deg,var(--purple-main),var(--pink-accent)); position:absolute; left:0; bottom:-8px; border-radius:2px; }
+    .item{ margin-bottom:25px; }
+    .item h3{ color:#6a1b9a; font-size:1.1rem; margin-bottom:5px; }
+    .item span{ font-size:.9rem; color:#7a5c9e; }
+    .item p{ margin-top:10px; line-height:1.7; font-size:.95rem; }
+    ul{ list-style:none; padding-left:0; }
+    ul li{ padding:8px 0; position:relative; padding-left:22px; }
+    ul li::before{ content:"✦"; position:absolute; left:0; color:var(--purple-main); }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+    footer{ text-align:center; padding:40px 20px; color:#6b4c8c; font-size:.9rem; }
+    @media(max-width:768px){ header h1{ font-size:2rem; } section{ padding:25px; } }
+    /* Canvas background */
+    #bgCanvas{ position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+  </style>
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <header>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px;">
+      <div style="width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,var(--purple-main),var(--pink-accent));padding:6px;">
+        <div style="width:100%;height:100%;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+          <img src="me.jpg" alt="Profile Photo" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+      </div>
+      <div style="text-align:center;max-width:500px;">
+        <h1>Ma. Juliet M. Ballesteros</h1>
+        <p>Bachelor of Science in Information Technology</p>
+        <a href="julietresume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a dedicated and customer-oriented professional with experience as a Lotto Teller, skilled in handling financial transactions, assisting customers, and ensuring accurate records. I enjoy working with people, resolving concerns, and providing excellent service. With strong communication skills, attention to detail, and the ability to work in fast-paced environments, I aim to contribute to customer service or administrative roles in an electronics company where I can grow professionally while supporting organizational success.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <h3>TVL - ICT</h3>
+      <span>Infanta National High School | 2019 - 2021</span>
+      <p>Completed Senior High School under the TVL-ICT strand at Infanta National High School, gaining hands-on training in basic computer systems, software applications, basic troubleshooting, and digital productivity tools. Developed strong computer literacy, attention to detail, and the ability to follow basic technical procedures and work efficiently in a technology-driven environment.</p>
+    </div>
+    <div class="item">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <span>Laguna State Polytechnic University - Siniloan Campus | 2021 - 2025</span>
+      <p>Bachelor of Science in Information Technology major in Service Management at Laguna State Polytechnic University, with academic training in information systems, service operations, customer experience management, and technology-enabled business processes. Equipped with skills in system analysis, database fundamentals, and the application of IT solutions to improve service quality and operational efficiency.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>Lotto Teller</h3>
+      <span>Infanta Outlet | 2025</span>
+      <p>Assisted customers in purchasing lotto tickets, verifying numbers, and providing accurate game information. Handled daily cash transactions, balanced cash registers, and prepared sales reports. Maintained a professional and friendly approach to ensure customer satisfaction while addressing and resolving customer concerns effectively.</p>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Skills</h2>
+      <ul>
+        <li>Customer Service & Communication Skills</li>
+        <li>Cash Handling & Transaction Accuracy</li>
+        <li>Basic Computer Literacy</li>
+        <li>Customer-Focused Mindset</li>
+        <li>Critical Thinking</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Lean Six Sigma White Belt Certification for Service Industry</li>
+        <li>Professional Communication</li>
+        <li>Fundamentals of Pitching and Start-up Project</li>
+        <li>Digital Awareness and Security Safety</li>
+        <li>Operating Systems Basics Course</li>
+        <li>3rd Nemesio Prudente International Research Conference</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 0981-206-5890</p>
+    <p><strong>Email:</strong> majulietballesteros@gmail.com</p>
+    <p><strong>Address:</strong> Brgy. Comon, Infanta, Quezon</p>
+  </section>
+
+  <footer>
+    © 2025 Ma. Juliet M. Ballesteros • Professional Portfolio
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas.getContext('2d');
+    let shapes = [];
+
+    function resizeCanvas(){
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Shape{
+      constructor(){
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 5 + 2;
+        this.speedX = (Math.random()-0.5) * 1.2;
+        this.speedY = (Math.random()-0.5) * 1.2;
+        this.color = `rgba(155,93,229,${Math.random()*0.5 + 0.2})`;
+      }
+      update(){
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if(this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if(this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+      draw(){
+        ctx.beginPath();
+        ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+    }
+
+    function initShapes(count){
+      shapes = [];
+      for(let i=0;i<count;i++) shapes.push(new Shape());
+    }
+    initShapes(100);
+
+    function animate(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      for(let i=0;i<shapes.length;i++){
+        shapes[i].update();
+        shapes[i].draw();
+        for(let j=i+1;j<shapes.length;j++){
+          let dx = shapes[i].x - shapes[j].x;
+          let dy = shapes[i].y - shapes[j].y;
+          let distance = Math.sqrt(dx*dx + dy*dy);
+          if(distance<120){
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(155,93,229,${0.15})`;
+            ctx.lineWidth = 1;
+            ctx.moveTo(shapes[i].x,shapes[i].y);
+            ctx.lineTo(shapes[j].x,shapes[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+</body>
+</html>
